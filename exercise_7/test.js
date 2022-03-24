@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var type_assertions_1 = require("type-assertions");
+var index_1 = require("./index");
+var pair1 = index_1.swap(123, "hello");
+type_assertions_1.typeAssert();
+var pair2 = index_1.swap(true, false);
+type_assertions_1.typeAssert();
+var pair3 = index_1.swap(null, undefined);
+type_assertions_1.typeAssert();
